@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User dashboard</title>
+	<link rel="stylesheet" type="text/css" href="dashboard.css">
+</head>
+<body align = "center">
+	<h1>Dashboard</h1>
+	<table align="center">
+		<thead>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Class</th>
+			<th>Year</th>
+			<th>City</th>
+			<th>Country</th>
+			<th></th>
+			<th></th>
+		</thead>
+		<tbody>
+		</tbody>
+	</table> 
+
+	<form align = "center" onsubmit="event.preventDefault(); onSubmit();">
+		<label for="ID">Student ID </label>
+		<input type="number" min="1" max="1000" step="1" value="" id="ID" name="id" /></br>
+
+		<label for="username">Student Name </label> 
+		<input id="username" type="text" name="name"></br>
+
+		<label for="email">Email </label>
+		<input id="email" type="email" name="emailid"></br> 
+
+		<label for="class">Class </label>
+		<input id="class" type="text" name="phone"></br>
+
+		<label for="year">Enrollment Year</label>
+		<input type="number" min="1900" max="2020" step="1" value="" id="year" name="year" /></br>
+
+        <label for="city">City </label>
+		<input id="city" type="text" name="city"></br>
+
+		<label for="country">Country </label>
+		<input id="country" type="text" name="country"></br></br>
+
+		<input type="submit" id="savebtn" name="save" value="save">
+		<button name="clear" id="clearbtn" onclick="event.preventDefault();clearform();">Clear</button>
+	</form>
+	<script type="text/javascript" src = "dashboard.js"></script>
+</body>
+</html>
